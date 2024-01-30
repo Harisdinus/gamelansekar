@@ -1,0 +1,341 @@
+<KartuKalibrasi>:
+    md_bg_color: '#F4F6FC'
+    line_color: '#DEDAD1'
+    line_width: 5
+    padding: '20dp'
+    IsiKalibrasi:
+
+
+<Isikalibrasi>:
+    orientation: 'vertical'
+    spacing: 3
+    size_hint: 1, 1
+    NormalKalibrasi:
+        size_hint: 1, 1
+    PekingKalibrasi:
+        size_hint: 1, 1
+    KenongKalibrasi:
+        size_hint: 1, 1
+    GongKalibrasi:
+        size_hint: 1, 1
+
+<NormalKalibrasi>:
+    md_bg_color: '#D9D9D9'
+    MDRelativeLayout:
+        MDLabel:
+            pos_hint: {'x': 27/582, 'top': (112-10)/112}
+            adaptive_size: True
+            text: 'Bilah Normal :'
+
+        TombolNormal:
+            pos_hint: {'x': 27/582, 'top': (112-42)/112}
+            size_hint: 527/582, 58/112
+            MDScrollView:
+                do_scroll_x: True
+                do_scroll_y: False
+                MDBoxLayout:
+                    adaptive_width: True
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 1'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah1()
+                        md_bg_color: app.kondisitombol.bcn1
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 2'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah2()
+                        md_bg_color: app.kondisitombol.bcn2
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 3'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah3()
+                        md_bg_color: app.kondisitombol.bcn3
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 4'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah4()
+                        md_bg_color: app.kondisitombol.bcn4
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 5'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah5()
+                        md_bg_color: app.kondisitombol.bcn5
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 6'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah6()
+                        md_bg_color: app.kondisitombol.bcn6
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 7'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah7()
+                        md_bg_color: app.kondisitombol.bcn7
+
+
+
+<PekingKalibrasi>:
+    md_bg_color: '#D9D9D9'
+    MDRelativeLayout:
+        MDLabel:
+            pos_hint: {'x': 27/582, 'top': (112-10)/112}
+            adaptive_size: True
+            text: 'Bilah Peking :'
+
+        TombolPeking:
+            pos_hint: {'x': 27/582, 'top': (112-42)/112}
+            size_hint: 527/582, 58/112
+            MDScrollView:
+                do_scroll_x: True
+                do_scroll_y: False
+                MDBoxLayout:
+                    adaptive_width: True
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 1'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah1()
+                        md_bg_color: app.kondisitombol.bcp1
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 2'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah2()
+                        md_bg_color: app.kondisitombol.bcp2
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 3'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah3()
+                        md_bg_color: app.kondisitombol.bcp3
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 4'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah4()
+                        md_bg_color: app.kondisitombol.bcp4
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 5'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah5()
+                        md_bg_color: app.kondisitombol.bcp5
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 6'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah6()
+                        md_bg_color: app.kondisitombol.bcp6
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 7'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah7()
+                        md_bg_color: app.kondisitombol.bcp7
+
+
+<KenongKalibrasi>:
+    md_bg_color: '#D9D9D9'
+    MDRelativeLayout:
+        MDLabel:
+            pos_hint: {'x': 27/582, 'top': (112-10)/112}
+            adaptive_size: True
+            text: 'Bilah Kenong :'
+
+        TombolKenong:
+            pos_hint: {'x': 27/582, 'top': (112-42)/112}
+            size_hint: 527/582, 58/112
+            MDScrollView:
+                do_scroll_x: True
+                do_scroll_y: False
+                MDBoxLayout:
+                    adaptive_width: True
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 1'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah1()
+                        md_bg_color: app.kondisitombol.bck1
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 2'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah2()
+                        md_bg_color: app.kondisitombol.bck2
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 3'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah3()
+                        md_bg_color: app.kondisitombol.bck3
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 5'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah5()
+                        md_bg_color: app.kondisitombol.bck5
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 6'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah6()
+                        md_bg_color: app.kondisitombol.bck6
+
+                    MDRectangleFlatButton:
+                        size_hint: None, 1
+                        text: 'Bilah 7'
+                        theme_color_text: 'Custom'
+                        text_color: 'black'
+                        line_color: '#7E544E'
+                        line_width: 2
+                        valign: 'center'
+                        halign: 'center'
+                        on_press: root.bilah7()
+                        md_bg_color: app.kondisitombol.bck7
+
+
+
+<GongKalibrasi>:
+    md_bg_color: '#D9D9D9'
+    MDRelativeLayout:
+        MDLabel:
+            pos_hint: {'x': 27/582, 'top': (112-10)/112}
+            adaptive_size: True
+            text: 'Bilah Gong :'
+
+        TombolGong:
+            pos_hint: {'x': 27/582, 'top': (112-42)/112}
+            size_hint: 527/582, 58/112
+            MDBoxLayout:
+                MDRectangleFlatButton:
+                    size_hint: 1, 1
+                    text: 'Gong'
+                    theme_color_text: 'Custom'
+                    text_color: 'black'
+                    line_color: '#7E544E'
+                    line_width: 2
+                    valign: 'center'
+                    halign: 'center'
+                    on_press: root.gong()
+                    md_bg_color: app.kondisitombol.bcg
+
+
+<TombolNormal, TombolPeking, TombolKenong, TombolGong>:
+    padding: '10dp'

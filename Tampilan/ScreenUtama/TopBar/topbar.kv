@@ -1,0 +1,25 @@
+<TopBar>:
+    MDIconButton:
+        icon: 'menu'
+        pos_hint: {'x': 13/1440, 'center_y': 0.5}
+        size_hint: None, None
+        icon_size: '79dp'
+        theme_icon_color: 'Custom'
+        icon_color: '#ffffff'
+        on_press: root.parent.ids.nav_drawer.set_state("open")
+    MDIconButton:
+        icon: 'tune'
+        pos_hint: {'right': (1440-13)/1440, 'center_y': 0.5}
+        size_hint: None, None
+        icon_size: '72dp'
+        theme_icon_color: 'Custom'
+        icon_color: '#ffffff'
+        on_press: app.bukaDialog()
+    StatusArduino:
+        size_hint: 176/1440, 73/143
+        pos_hint: {'right': (1440-134)/1440, 'top': (143-35)/143}
+        md_bg_color: app.koneksiarduino.warna
+        MDLabel:
+            text: app.koneksiarduino.pesan
+            halign: 'center'
+            font_size: '16sp'

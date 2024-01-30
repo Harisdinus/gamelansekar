@@ -1,0 +1,61 @@
+
+<NavDrawlayout>:
+    md_bg_color: '#CCDCF2'
+    TopBar:
+        pos_hint: {'center_x': 0.5, 'top': 1}
+        size_hint: 1, 143/960
+        md_bg_color: '#394F8A'
+    
+
+    MDNavigationLayout:
+
+        MDScreenManager:
+            id: screen_manager
+
+            ScreenUtama:
+                name: "screenutama"
+
+
+            ScreenKedua:
+                name: "screenkedua"
+
+
+        MDNavigationDrawer:
+            id: nav_drawer
+            radius: (0, 16, 16, 0)
+
+            MDNavigationDrawerMenu:
+
+                MDNavigationDrawerHeader:
+                    title: "Sekar Nuswantoro"
+                    text: "Gamelan Player"
+                    spacing: "4dp"
+                    padding: "12dp", 0, 0, "56dp"
+
+                MDNavigationDrawerItem:
+                    icon: "music-circle"
+                    text: "Player"
+                    on_press:
+                        app.arduino.modePlayer()
+                        nav_drawer.set_state("close")
+                        screen_manager.current = "screenutama"
+
+                MDNavigationDrawerItem:
+                    icon: "tools"
+                    text: "Kalibrasi"
+                    on_press:
+                        app.arduino.modeKalibrasi()
+                        nav_drawer.set_state("close")
+                        screen_manager.current = "screenkedua"
+
+                MDNavigationDrawerItem:
+                    icon: "exit-to-app"
+                    text: "Exit"
+                    on_press:
+                        nav_drawer.set_state("close")
+                        app.stop()
+
+
+
+                
+

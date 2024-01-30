@@ -1,0 +1,33 @@
+<RV>:
+    viewclass: 'IsiPlaylist'
+    data: app.modelnotasi.isi
+    RecycleBoxLayout:
+        default_size: None, '100dp'
+        default_size_hint: 1, None
+        size_hint_y: None
+        height: self.minimum_height
+        orientation: 'vertical'
+        spacing: 10
+
+<IsiPlaylist>:
+    lagu : ''
+    laras: ''
+    notasi: ''
+    md_bg_color: root.selectcolor
+    size_hint: 1, 1
+    ripple_behavior: True
+    on_press: app.rv.clicked(root.index)
+    MDRelativeLayout:
+        MDLabel:
+            pos_hint: {'x': 16/581, 'y': 43/85}
+            text: root.lagu
+            adaptive_height: True
+            font_style: 'Body1'
+            font_size: '24dp'
+        MDLabel:
+            pos_hint: {'x': 16/581, 'y': 11/85}
+            text: root.laras
+            adaptive_size: True
+            font_style: 'Body2'
+            font_size: '18dp'
+    

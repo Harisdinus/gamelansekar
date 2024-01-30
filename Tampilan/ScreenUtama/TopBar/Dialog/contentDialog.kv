@@ -1,0 +1,33 @@
+<ContentDialog>:
+    orientation: 'vertical'
+    size_hint: 1, None
+    height: '400dp'
+    MDLabel:
+        text: str('Kecepatan : ' + str(round((int(slidersatu.value)/2), 2)) + 'x')
+    SliderDialog1:
+        id: slidersatu
+        min: 1
+        max: 3
+        value: app.dialogValue.slider1
+        on_touch_up: root.pencet1(slidersatu.value) if self.collide_point(*args[1].pos) else False
+    MDLabel:
+        text: str('TouchTime : ' + str(int(sliderdua.value)) + 'ms')
+    SliderDialog2:
+        id: sliderdua
+        min: 1
+        max: 500
+        value: app.dialogValue.slider2
+        on_touch_up: root.pencet2(sliderdua.value) if self.collide_point(*args[1].pos) else False
+    MDLabel:
+        text: str('Panjang Lagu : ' + str(int(slidertiga.value)) + 'x')
+    SliderDialog3:
+        id: slidertiga
+        min: 1
+        max: 5
+        value: app.dialogValue.slider3
+        on_touch_up: root.pencet3(slidertiga.value) if self.collide_point(*args[1].pos) else False
+
+<SliderDialog1@MDSlider,SliderDialog2@MDSlider,SliderDialog3@MDSlider>:
+    size_hint: 1, 1
+    show_off: False
+    hint: False

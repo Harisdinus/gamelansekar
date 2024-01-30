@@ -1,0 +1,202 @@
+#:import utils kivy.utils
+
+<MonitorBilah>:
+    spacing: 3
+    size_hint: 1, 1
+    orientation: 'vertical'
+    Normal:
+        md_bg_color: '#D9D9D9'
+    Peking:
+        md_bg_color: '#D9D9D9'
+    Kenong:
+        md_bg_color: '#D9D9D9'
+    Gong:
+        md_bg_color: '#D9D9D9'
+
+<Normal>:
+    size_hint: 1, 1
+    MDRelativeLayout:
+        MDLabel:
+            pos_hint: {'x': 27/582, 'top': (112-10)/112}
+            adaptive_size: True
+            text: 'Bilah Normal :'
+
+        NormalMonitor:
+            pos_hint: {'x': 27/582, 'top': (112-42)/112}
+            size_hint: 527/582, 58/112
+            MDBoxLayout:
+                spacing: 3
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahnormal1
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahnormal2
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahnormal3
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahnormal4
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahnormal5
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahnormal6
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahnormal7
+                        Rectangle:
+                            size: self.size
+                
+
+<Peking>:
+    size_hint: 1, 1
+    MDRelativeLayout:
+        MDLabel:
+            pos_hint: {'x': 27/582, 'top': (112-10)/112}
+            adaptive_size: True
+            text: 'Bilah Peking :'
+
+        PekingMonitor:
+            pos_hint: {'x': 27/582, 'top': (112-42)/112}
+            size_hint: 527/582, 58/112
+            MDBoxLayout:
+                spacing: 3
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahpeking1
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahpeking2
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahpeking3
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahpeking4
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahpeking5
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahpeking6
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahpeking7
+                        Rectangle:
+                            size: self.size
+                
+
+<Kenong>:
+    size_hint: 1, 1
+    MDRelativeLayout:
+        MDLabel:
+            pos_hint: {'x': 27/582, 'top': (112-10)/112}
+            adaptive_size: True
+            text: 'Bilah Kenong :'
+
+        KenongMonitor:
+            pos_hint: {'x': 27/582, 'top': (112-42)/112}
+            size_hint: 527/582, 58/112
+            MDBoxLayout:
+                spacing: 3
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahkenong1
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahkenong2
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahkenong3
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahkenong5
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahkenong6
+                        Rectangle:
+                            size: self.size
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahkenong7
+                        Rectangle:
+                            size: self.size
+
+            
+<Gong>:
+    size_hint: 1, 1
+    MDRelativeLayout:
+        MDLabel:
+            pos_hint: {'x': 27/582, 'top': (112-10)/112}
+            adaptive_size: True
+            text: 'Gong :'
+
+        GongMonitor:
+            pos_hint: {'x': 27/582, 'top': (112-42)/112}
+            size_hint: 527/582, 58/112
+            MDBoxLayout:
+                RelativeLayout:
+                    canvas:
+                        Color:
+                            rgb: app.monitor.bilahgong
+                        Rectangle:
+                            size: self.size
+
+<NormalMonitor, PekingMonitor, KenongMonitor, GongMonitor>:
+    md_bg_color: '#B8ADAD'
+    padding: '10dp'

@@ -1,0 +1,47 @@
+<BottomBar>:
+    md_bg_color: '#394F8A'
+    radius: 10
+    MDIconButton:
+        icon: 'step-backward'
+        pos_hint: {'center_x': (610+(66/2))/1440, 'center_y': (77+(66/2))/143}
+        size_hint: None, None
+        icon_size: '30dp'
+        theme_icon_color: 'Custom'
+        icon_color: '#ffffff'
+        on_press: root.previous()
+    MDIconButton:
+        icon: app.playingState.iconPlayed
+        pos_hint: {'center_x': 0.5, 'center_y': (77+(66/2))/143}
+        size_hint: None, None
+        icon_size: '30dp'
+        theme_icon_color: 'Custom'
+        icon_color: '#ffffff'
+        on_press: root.play()
+    MDIconButton:
+        icon: 'step-forward'
+        pos_hint: {'center_x': (773+(66/2))/1440, 'center_y': (77+(66/2))/143}
+        size_hint: None, None
+        icon_size: '30dp'
+        theme_icon_color: 'Custom'
+        icon_color: '#ffffff'
+        on_press: root.next()
+    MDSlider:
+        id: slidermusic
+        pos_hint: {'center_x': 0.5, 'center_y': 37/143}
+        size_hint: 582/1440, 0.5
+        hint: False
+        show_off: False
+        min: 0
+        max: app.slidervalue.endMusic
+        value: app.slidervalue.indexMusic
+        on_touch_up: app.slidervalue.sliderIndex(slidermusic.value) if self.collide_point(*args[1].pos) else False
+        on_touch_down: app.slidervalue.sliderDown() if self.collide_point(*args[1].pos) else False
+    MDIconButton:
+        icon: app.repeatState.iconRepeat
+        pos_hint: {'right': (1354+64)/1440, 'center_y': 0.5}
+        size_hint: None, None
+        icon_size: '42dp'
+        theme_icon_color: 'Custom'
+        icon_color: '#ffffff'
+        on_press: root.repeatState()
+        
